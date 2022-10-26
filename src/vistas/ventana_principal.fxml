@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="AnchorPane" fx:id="borderPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Ventana_principalController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="170.0" style="-fx-background-color: #6A00EE;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn_NCliente" graphicTextGap="0.0" mnemonicParsing="false" onAction="#onBtnNCliente" onMouseEntered="#onMEntNCLiente" onMouseExited="#onMExitNCliente" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #8E33FF; -fx-border-width: 0px 0px 0px 5px; -fx-border-color: #ffffff; -fx-border-radius: 0; -fx-background-radius: 0;" text="Nuevo cliente" textFill="WHITE">
+               <graphic>
+                  <ImageView fx:id="ivCliente" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                     <rotationAxis>
+                        <Point3D />
+                     </rotationAxis>
+                  </ImageView>
+               </graphic></Button>
+            <Button fx:id="btn_Tareas" graphicTextGap="0.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onBtnTareas" onMouseEntered="#onMEntTareas" onMouseExited="#onMExitTareas" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #6A00EE; -fx-border-radius: 0; -fx-background-radius: 0;" text="Pendientes" textFill="WHITE">
+               <graphic>
+                  <ImageView fx:id="ivPendientes" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0" />
+               </graphic></Button>
+            <Button fx:id="btn_EProceso" graphicTextGap="0.0" layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#onBtnEProceso" onMouseEntered="#onMEntEProceso" onMouseExited="#onMExitEProceso" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #6A00EE; -fx-border-radius: 0; -fx-background-radius: 0;" text="En proceso" textFill="WHITE">
+               <graphic>
+                  <ImageView fx:id="ivEnProceso" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0" />
+               </graphic></Button>
+            <Button fx:id="btn_Terminadas" graphicTextGap="0.0" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onAction="#onBtnTerminadas" onMouseEntered="#onMEntTerminadas" onMouseExited="#onMExitTerminadas" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #6A00EE; -fx-border-radius: 0; -fx-background-radius: 0;" text="Terminados" textFill="WHITE">
+               <graphic>
+                  <ImageView fx:id="ivTerminados" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0" />
+               </graphic></Button>
+            <Button fx:id="btn_Anadir" graphicTextGap="0.0" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" onAction="#onBtnAnadir" onMouseEntered="#onMEntAnadir" onMouseExited="#onMExitAnadir" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #6A00EE; -fx-border-radius: 0; -fx-background-radius: 0;" text="Añadir aplicaciones" textFill="WHITE">
+               <graphic>
+                  <ImageView fx:id="ivAplicaciones" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="btn_Precios" graphicTextGap="0.0" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" onAction="#onBtnPrecios" onMouseEntered="#onMEntPrecios" onMouseExited="#onMExitPrecios" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #6A00EE; -fx-border-radius: 0; -fx-background-radius: 0;" text="Ingresar precios" textFill="WHITE">
+               <graphic>
+                  <ImageView fx:id="ivPrecios" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0" />
+               </graphic></Button>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>

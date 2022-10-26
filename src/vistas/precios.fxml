@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.PreciosController">
+   <children>
+      <Button fx:id="btnGuardar" layoutX="155.0" layoutY="361.0" mnemonicParsing="false" onAction="#onGuardar" prefWidth="120.0" style="-fx-background-color: #6A00EE;" text="Guardar" textFill="WHITE" />
+      <VBox layoutX="13.0" layoutY="5.0" prefHeight="97.0" prefWidth="406.0">
+         <children>
+            <Label text="Instalacion de SO:" />
+            <TextField fx:id="tfSO" style="-fx-border-color: #6A00EE; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-width: 2;">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Instalacion de programas:" />
+            <TextField fx:id="tfProgramas" style="-fx-border-color: #6A00EE; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 2;">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label layoutX="10.0" layoutY="56.0" text="Instalacion de videojuegos:" />
+            <TextField fx:id="tfJuegos" layoutX="10.0" layoutY="73.0" style="-fx-border-color: #6A00EE; -fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 2;" />
+         </children>
+      </VBox>
+      <Button fx:id="btnActualizar" layoutX="155.0" layoutY="326.0" mnemonicParsing="false" onAction="#onActualizar" prefWidth="120.0" style="-fx-background-color: #6A00EE;" text="Actualizar" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.AgregarController">
+   <children>
+      <Label layoutX="5.0" layoutY="7.3" text="Sistema operativo:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="205.0" layoutY="7.0" text="Programas:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="405.0" layoutY="7.0" text="Juegos:" />
+      <Button layoutX="240.0" layoutY="350.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #6A00EE;" text="Aplicar y cerrar" textFill="WHITE" />
+      <ListView fx:id="listSO" layoutX="5.0" layoutY="57.0" onMouseClicked="#c" onMousePressed="#c" prefHeight="275.0" prefWidth="190.0" style="-fx-background-color: #6A00EE;" />
+      <ListView fx:id="listProgramas" layoutX="205.0" layoutY="57.0" prefHeight="275.0" prefWidth="190.0" style="-fx-background-color: #6A00EE;" />
+      <ListView fx:id="listJuegos" layoutX="405.0" layoutY="57.0" prefHeight="275.0" prefWidth="190.0" style="-fx-background-color: #6A00EE;" />
+      <ComboBox fx:id="cbSO" layoutX="5.0" layoutY="25.0" onAction="#onSO" prefWidth="190.0" promptText="---" style="-fx-border-color: #6A00EE; -fx-border-radius: 5; -fx-background-radius: 5;" />
+      <ComboBox fx:id="cbProgramas" layoutX="205.0" layoutY="25.0" onAction="#onProgramas" prefWidth="190.0" promptText="---" style="-fx-border-color: #6A00EE; -fx-background-radius: 5; -fx-border-radius: 5;" />
+      <ComboBox fx:id="cbJuegos" layoutX="405.0" layoutY="25.0" onAction="#onJuegos" prefWidth="190.0" promptText="---" style="-fx-border-color: #6A00EE; -fx-background-radius: 5; -fx-border-radius: 5;" />
+   </children>
+</AnchorPane>

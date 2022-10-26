@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="203.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Ver_precioController">
+   <children>
+      <Button fx:id="btnCerrar" layoutX="144.0" layoutY="166.0" mnemonicParsing="false" onAction="#onCerrar" prefWidth="120.0" style="-fx-background-color: #6A00EE;" text="Cerrar" textFill="WHITE" />
+      <VBox layoutX="10.0" layoutY="55.0" prefHeight="89.0" prefWidth="385.0">
+         <children>
+            <Label contentDisplay="RIGHT" text="Instalacion de SO:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="lbPrecioSO" text="..." />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></Label>
+            <Label contentDisplay="RIGHT" text="Instalacion de programas:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="lbPrecioProgramas" text="..." />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></Label>
+            <Label contentDisplay="RIGHT" layoutX="10.0" layoutY="56.0" text="Instalacion de juegos:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="lbPrecioJuegos" text="..." />
+               </graphic></Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
